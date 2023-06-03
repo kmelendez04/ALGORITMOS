@@ -70,7 +70,7 @@ void insertSort() {
 
 
 
-//Selection sort Buscar el mínimo elemento de la lista, lo intercambia por el primero
+//Selection sort Busca el mínimo elemento de la lista, lo intercambia por el primero
 //busca el siguiente mínimo en el resto de la lista y lo intercambia con el segundo y asi sucesivamente
 
 void selectSort(){
@@ -227,7 +227,7 @@ vector<int> vec;//Se crea un vector para almacenar los elementos ingresados.
 
 
 
-
+//Se reserva una taba auxiliar llamada indice ademas del archivo ordenado mismo. 
 
 void indexada (){
     vector<int> vec;//Se crea un vector para almacenar los elementos ingresados.
@@ -263,53 +263,3 @@ void indexada (){
 }
 
 
-int main() {
-    int opcion;
-    do{
-        cout<<"1. Bubble Sort"<<endl;
-        cout<<"2. Insert Sort"<<endl;
-        cout<<"3. Select Sort"<<endl;
-        cout<<"4. Shell Sort"<<endl;
-        cout<<endl;
-        cout<<"5. Busqueda Secuencial"<<endl;
-        cout<<"6. Busqueda Binaria"<<endl;
-        cout<<"7. Busqueda Indexada"<<endl;
-        
-        cin>>opcion;
-        
-    switch(opcion)
-    {
-        case 1:{
-        bubble();
-        break;
-    }
-        case 2:{
-        insertSort();
-        break;
-    }
-        case 3:{
-        selectSort();
-        break;
-    }
-        case 4:{
-        shellSort();
-        break;
-    }
-        case 5:{
-        secuencial();
-        break;
-    }
-        case 6:{
-        binaria();
-        break;
-    }
-        case 7:{
-        indexada();
-        break;
-    }
-        
-}
-
-}while (opcion!=7);
-return 0;
-}
